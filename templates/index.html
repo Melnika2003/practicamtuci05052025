@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет грузовиков</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-6">Учет грузовиков на терминале</h1>
+        
+        <!-- Форма загрузки -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Загрузка изображения/видео</h2>
+            <form id="upload-form" enctype="multipart/form-data" class="flex flex-col space-y-4">
+                <input type="file" id="file-input" name="file" accept=".png,.jpg,.jpeg,.mp4" class="border p-2">
+                <button type="submit" id="upload-btn" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Обработать</button>
+            </form>
+        </div>
+        
+        <!-- RTSP-поток -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">RTSP-поток</h2>
+            <form id="rtsp-form" class="flex flex-col space-y-4">
+                <input type="text" id="rtsp-url" name="rtsp_url" placeholder="rtsp://username:password@ip:port/stream" class="border p-2">
+                <button type="submit" id="rtsp-btn" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Обработать кадр</button>
+            </form>
+        </div>
+        
+        <!-- Результат -->
+        <div id="result" class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Результат</h2>
+            <p id="count" class="text-lg"></p>
+            <img id="output-img" class="max-w-full h-auto hidden" alt="Результат обработки">
+        </div>
+        
+        <!-- История -->
+        <div id="history" class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">История запросов</h2>
+            <table class="w-full border">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border p-2">ID</th>
+                        <th class="border p-2">Время</th>
+                        <th class="border p-2">Файл/Поток</th>
+                        <th class="border p-2">Количество грузовиков</th>
+                        <th class="border p-2">Изображение</th>
+                    </tr>
+                </thead>
+                <tbody id="history-table"></tbody>
+            </table>
+        </div>
+        
+        <!-- Отчет -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Скачать отчет</h2>
+            <a href="/download_report" id="download-btn" class="bg-green-500 text-white p-2 rounded hover:bg-green-600">Скачать Excel</a>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Flask==2.0.1
+ultralytics==8.3.120
+opencv-python==4.8.0.76
+numpy==1.24.0
+pandas==1.5.0
+openpyxl==3.0.10
+werkzeug==2.0.3

@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+}
+img {
+    max-width: 100%;
+}

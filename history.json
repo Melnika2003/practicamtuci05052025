@@ -1,0 +1,44 @@
+[
+    {
+        "id": "58f1e0fb-50fe-429f-b4e2-e071a4942e46",
+        "timestamp": "2025-05-04 23:51:46",
+        "filename": "log_centr.jpg",
+        "truck_count": 9,
+        "output_path": "static/uploads\\result_log_centr.jpg"
+    },
+    {
+        "id": "60caef2b-4a27-46cc-8fb6-6be9e5928c0b",
+        "timestamp": "2025-05-05 00:00:38",
+        "filename": "Rhenus_Logistics_Russia_Terminal_Smolensk.mp4",
+        "truck_count": 9,
+        "output_path": ""
+    },
+    {
+        "id": "cf055506-db56-4821-b2ed-cca2fdb7e15e",
+        "timestamp": "2025-05-05 00:01:41",
+        "filename": "terminal.jpg",
+        "truck_count": 4,
+        "output_path": "static/uploads\\result_terminal.jpg"
+    },
+    {
+        "id": "5ed0a9fe-5980-4f0f-b939-08132efc8cae",
+        "timestamp": "2025-05-05 00:04:49",
+        "filename": "log_centr.jpg",
+        "truck_count": 9,
+        "output_path": "static/uploads\\result_log_centr.jpg"
+    },
+    {
+        "id": "a34844fd-10bf-4cb1-898d-a059a4a71712",
+        "timestamp": "2025-05-05 00:09:24",
+        "filename": "log_centr.jpg",
+        "truck_count": 9,
+        "output_path": "static/uploads\\result_log_centr.jpg"
+    },
+    {
+        "id": "ca5ff15e-dca4-41a0-bd2d-c6ccc0cd4ec2",
+        "timestamp": "2025-05-05 00:14:20",
+        "filename": "log_centr.jpg",
+        "truck_count": 9,
+        "output_path": "static/uploads\\result_log_centr.jpg"
+    }
+]
